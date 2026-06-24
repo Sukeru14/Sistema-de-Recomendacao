@@ -7,14 +7,14 @@ Implementação e comparação de algoritmos de filtragem colaborativa
 
 ```
 recsys/
-├── data/ml-100k/         Dataset MovieLens 100k (943 usuários, 1682 itens, 100k notas)
+├── data/ml-100k/         Dataset MovieLens 100k
 │                         Inclui os 5 folds pré-definidos: u1.base/u1.test ... u5.base/u5.test
 ├── src/
 │   ├── data_utils.py          Carregamento de dados e construção da matriz usuário-item
-│   ├── memory_based.py        User-based KNN e Item-based KNN (implementados DO ZERO)
-│   ├── model_based.py         Regularized SVD via SGD (implementado DO ZERO, acelerado com numba)
+│   ├── memory_based.py        User-based KNN e Item-based KNN
+│   ├── model_based.py         Regularized SVD via SGD
 │   ├── evaluation.py          Métricas (RMSE, MAE) e infraestrutura de cross-validation
-│   ├── hyperparam_search.py   Busca de hiperparâmetros um-de-cada-vez (holdout no fold u1)
+│   ├── hyperparam_search.py   Busca de hiperparâmetros um de cada vez (holdout no fold u1)
 │   ├── grid_search_svd.py     Busca em grade conjunta (n_factors x reg) para o SVD
 │   ├── final_evaluation.py    Avaliação final via 5-fold CV com os melhores hiperparâmetros
 │   ├── ranking_evaluation.py        EXTRA: métricas de qualidade da recomendação (Precision@K, Recall@K, NDCG@K, MAP@K)
@@ -34,10 +34,6 @@ recsys/
 | Item-based KNN (memória, extra) | **Implementado do zero** (numpy) — `memory_based.py` |
 | Regularized SVD (modelo) | **Implementado do zero** (numpy + numba para acelerar o loop de SGD) — `model_based.py` |
 | SVD via scikit-surprise (extra) | **Biblioteca externa**, usado apenas como validação/comparação — `compare_surprise.py` |
-
-O numba é usado apenas para compilar (JIT) o mesmo loop de SGD que está escrito em Python puro
-no docstring do módulo — não substitui a lógica do algoritmo por uma implementação de terceiros,
-só acelera a execução (de ~20s para ~2s por fold).
 
 ## Como executar
 
