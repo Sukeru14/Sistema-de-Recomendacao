@@ -1,0 +1,14 @@
+{
+  "rmse_mean": 0.9302389820632964,
+  "rmse_std": 0.004220715349134517,
+  "mae_mean": 0.7307129223807932,
+  "mae_std": 0.002765802657593006,
+  "time_mean": 0.6400721073150635,
+  "params": {
+    "n_factors": 20,
+    "lr_all": 0.005,
+    "reg_all": 0.02,
+    "n_epochs": 30
+  },
+  "source": "scikit-surprise (biblioteca externa, N\u00c3O implementado do zero)"
+}

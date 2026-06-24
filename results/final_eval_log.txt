@@ -1,0 +1,48 @@
+=== Avaliação final via 5-fold CV ===
+
+-- User-based KNN {'mode': 'user', 'similarity': 'pearson', 'k': 30} --
+    Fold 1: RMSE=0.9475  MAE=0.7391  (1.5s)
+    Fold 2: RMSE=0.9381  MAE=0.7284  (1.3s)
+    Fold 3: RMSE=0.9346  MAE=0.7287  (1.4s)
+    Fold 4: RMSE=0.9319  MAE=0.7264  (1.3s)
+    Fold 5: RMSE=0.9330  MAE=0.7317  (1.4s)
+  RMSE = 0.9370 ± 0.0056
+  MAE  = 0.7309 ± 0.0044
+
+-- Item-based KNN {'mode': 'item', 'similarity': 'pearson', 'k': 30} --
+    Fold 1: RMSE=0.9300  MAE=0.7269  (2.1s)
+    Fold 2: RMSE=0.9193  MAE=0.7157  (2.1s)
+    Fold 3: RMSE=0.9161  MAE=0.7148  (2.1s)
+    Fold 4: RMSE=0.9138  MAE=0.7138  (2.1s)
+    Fold 5: RMSE=0.9179  MAE=0.7208  (2.0s)
+  RMSE = 0.9194 ± 0.0056
+  MAE  = 0.7184 ± 0.0049
+
+-- Regularized SVD (config da grade conjunta) {'n_factors': 50, 'lr': 0.005, 'reg': 0.05, 'n_epochs': 30} --
+    Fold 1: RMSE=0.9374  MAE=0.7392  (3.1s)
+    Fold 2: RMSE=0.9249  MAE=0.7264  (2.8s)
+    Fold 3: RMSE=0.9198  MAE=0.7245  (2.8s)
+    Fold 4: RMSE=0.9193  MAE=0.7239  (2.8s)
+    Fold 5: RMSE=0.9217  MAE=0.7306  (2.8s)
+  RMSE = 0.9246 ± 0.0067
+  MAE  = 0.7289 ± 0.0057
+
+-- Regularized SVD (config da busca individual, para comparação) {'n_factors': 20, 'lr': 0.005, 'reg': 0.02, 'n_epochs': 30} --
+    Fold 1: RMSE=0.9422  MAE=0.7412  (2.5s)
+    Fold 2: RMSE=0.9317  MAE=0.7304  (2.4s)
+    Fold 3: RMSE=0.9292  MAE=0.7292  (2.4s)
+    Fold 4: RMSE=0.9288  MAE=0.7301  (2.4s)
+    Fold 5: RMSE=0.9273  MAE=0.7327  (2.4s)
+  RMSE = 0.9318 ± 0.0054
+  MAE  = 0.7327 ± 0.0044
+
+-- Baseline: previsão pela média global de notas --
+  RMSE = 1.1256
+  MAE  = 0.9447
+
+=== Resumo Final ===
+Algoritmo                   RMSE         MAE
+Baseline (média)          1.1256      0.9447
+User-based KNN            0.9370      0.7309
+Item-based KNN            0.9194      0.7184
+Regularized SVD           0.9246      0.7289

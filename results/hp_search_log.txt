@@ -1,0 +1,68 @@
+=== Busca de hiperparâmetros: User-based KNN ===
+  user-based sim=cosine   k=   5  RMSE=0.9964  MAE=0.7772  (0.6s)
+  user-based sim=cosine   k=  10  RMSE=0.9688  MAE=0.7565  (0.6s)
+  user-based sim=cosine   k=  20  RMSE=0.9575  MAE=0.7482  (0.6s)
+  user-based sim=cosine   k=  30  RMSE=0.9576  MAE=0.7486  (0.6s)
+  user-based sim=cosine   k=  50  RMSE=0.9583  MAE=0.7499  (0.6s)
+  user-based sim=cosine   k=  80  RMSE=0.9607  MAE=0.7523  (0.6s)
+  user-based sim=cosine   k= 120  RMSE=0.9629  MAE=0.7550  (0.6s)
+  user-based sim=pearson  k=   5  RMSE=0.9900  MAE=0.7706  (1.6s)
+  user-based sim=pearson  k=  10  RMSE=0.9596  MAE=0.7476  (1.6s)
+  user-based sim=pearson  k=  20  RMSE=0.9490  MAE=0.7396  (1.6s)
+  user-based sim=pearson  k=  30  RMSE=0.9475  MAE=0.7391  (1.7s)
+  user-based sim=pearson  k=  50  RMSE=0.9485  MAE=0.7403  (1.6s)
+  user-based sim=pearson  k=  80  RMSE=0.9499  MAE=0.7421  (1.6s)
+  user-based sim=pearson  k= 120  RMSE=0.9515  MAE=0.7438  (1.6s)
+
+=== Busca de hiperparâmetros: Item-based KNN ===
+  item-based sim=cosine   k=   5  RMSE=0.9635  MAE=0.7468  (0.6s)
+  item-based sim=cosine   k=  10  RMSE=0.9368  MAE=0.7297  (0.6s)
+  item-based sim=cosine   k=  20  RMSE=0.9310  MAE=0.7269  (0.6s)
+  item-based sim=cosine   k=  30  RMSE=0.9324  MAE=0.7293  (0.6s)
+  item-based sim=cosine   k=  50  RMSE=0.9359  MAE=0.7337  (0.6s)
+  item-based sim=cosine   k=  80  RMSE=0.9399  MAE=0.7375  (0.6s)
+  item-based sim=cosine   k= 120  RMSE=0.9429  MAE=0.7407  (0.6s)
+  item-based sim=pearson  k=   5  RMSE=0.9626  MAE=0.7444  (2.6s)
+  item-based sim=pearson  k=  10  RMSE=0.9367  MAE=0.7284  (2.4s)
+  item-based sim=pearson  k=  20  RMSE=0.9306  MAE=0.7260  (2.4s)
+  item-based sim=pearson  k=  30  RMSE=0.9300  MAE=0.7269  (2.4s)
+  item-based sim=pearson  k=  50  RMSE=0.9322  MAE=0.7295  (2.4s)
+  item-based sim=pearson  k=  80  RMSE=0.9337  MAE=0.7313  (2.4s)
+  item-based sim=pearson  k= 120  RMSE=0.9350  MAE=0.7326  (2.4s)
+
+=== Busca de hiperparâmetros: Regularized SVD ===
+-- Variando n_factors (lr=0.005, reg=0.02, epochs=30) --
+  factors=   5  RMSE=0.9451  MAE=0.7429  (3.1s)
+  factors=  10  RMSE=0.9430  MAE=0.7415  (2.7s)
+  factors=  20  RMSE=0.9422  MAE=0.7412  (2.7s)
+  factors=  30  RMSE=0.9477  MAE=0.7436  (2.9s)
+  factors=  50  RMSE=0.9497  MAE=0.7460  (3.2s)
+  factors= 100  RMSE=0.9551  MAE=0.7508  (3.8s)
+-- Variando reg (lambda) (n_factors=20, lr=0.005, epochs=30) --
+  reg= 0.000  RMSE=0.9575  MAE=0.7508  (2.7s)
+  reg= 0.005  RMSE=0.9524  MAE=0.7475  (2.8s)
+  reg= 0.010  RMSE=0.9482  MAE=0.7448  (2.7s)
+  reg= 0.020  RMSE=0.9422  MAE=0.7412  (2.8s)
+  reg= 0.050  RMSE=0.9384  MAE=0.7406  (2.7s)
+  reg= 0.100  RMSE=0.9493  MAE=0.7517  (2.7s)
+  reg= 0.200  RMSE=0.9600  MAE=0.7637  (2.7s)
+-- Variando lr (n_factors=20, reg=0.02, epochs=30) --
+  lr=0.0005  RMSE=0.9857  MAE=0.7856  (2.7s)
+  lr=0.0010  RMSE=0.9692  MAE=0.7683  (2.8s)
+  lr=0.0020  RMSE=0.9585  MAE=0.7576  (2.7s)
+  lr=0.0050  RMSE=0.9422  MAE=0.7412  (2.7s)
+  lr=0.0100  RMSE=0.9771  MAE=0.7612  (2.7s)
+  lr=0.0200  RMSE=1.0200  MAE=0.7873  (2.7s)
+  lr=0.0500  RMSE=1.0546  MAE=0.8094  (2.7s)
+-- Variando n_epochs (n_factors=20, lr=0.005, reg=0.02) --
+  epochs=   5  RMSE=0.9730  MAE=0.7721  (0.5s)
+  epochs=  10  RMSE=0.9611  MAE=0.7603  (1.0s)
+  epochs=  20  RMSE=0.9483  MAE=0.7477  (1.8s)
+  epochs=  30  RMSE=0.9422  MAE=0.7412  (2.7s)
+  epochs=  50  RMSE=0.9656  MAE=0.7549  (4.4s)
+  epochs=  80  RMSE=0.9994  MAE=0.7752  (7.0s)
+
+=== Melhores configurações (holdout, fold u1) ===
+User-based: {'mode': 'user', 'similarity': 'pearson', 'k': 30, 'rmse': 0.9474897809974228, 'mae': 0.7390893515283271}
+Item-based: {'mode': 'item', 'similarity': 'pearson', 'k': 30, 'rmse': 0.9300135609343999, 'mae': 0.726906034686469}
+Melhor n_factors (SVD): {'param': 'n_factors', 'value': 20, 'lr': 0.005, 'reg': 0.02, 'n_epochs': 30, 'n_factors': 20, 'rmse': 0.9421805651680857, 'mae': 0.7411695059388794}

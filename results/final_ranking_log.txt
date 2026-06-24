@@ -1,0 +1,31 @@
+=== Avaliação de Ranking via 5-fold CV (K=(5, 10, 20)) ===
+
+-- User-based KNN {'mode': 'user', 'similarity': 'pearson', 'k': 30} --
+    Fold 1 concluído.
+    Fold 2 concluído.
+    Fold 3 concluído.
+    Fold 4 concluído.
+    Fold 5 concluído.
+  (9.8s)
+
+-- Item-based KNN {'mode': 'item', 'similarity': 'pearson', 'k': 30} --
+    Fold 1 concluído.
+    Fold 2 concluído.
+    Fold 3 concluído.
+    Fold 4 concluído.
+    Fold 5 concluído.
+  (14.2s)
+
+-- Regularized SVD {'n_factors': 50, 'lr': 0.005, 'reg': 0.05, 'n_epochs': 30} --
+    Fold 1 concluído.
+    Fold 2 concluído.
+    Fold 3 concluído.
+    Fold 4 concluído.
+    Fold 5 concluído.
+  (18.0s)
+
+=== Resumo Final (Precision@K / Recall@K / NDCG@K) ===
+Algoritmo                P@5       R@5    NDCG@5      P@10      R@10   NDCG@10      P@20      R@20   NDCG@20
+User-based KNN        0.7207    0.4909    0.8325    0.6117    0.6839    0.8473    0.4651    0.8399    0.8675
+Item-based KNN        0.7314    0.4955    0.8429    0.6168    0.6865    0.8543    0.4677    0.8422    0.8728
+Regularized SVD       0.7200    0.4889    0.8324    0.6125    0.6826    0.8478    0.4665    0.8406    0.8681

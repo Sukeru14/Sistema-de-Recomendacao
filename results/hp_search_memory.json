@@ -1,0 +1,198 @@
+[
+  {
+    "mode": "user",
+    "similarity": "cosine",
+    "k": 5,
+    "rmse": 0.9963598220543242,
+    "mae": 0.7772002614904886
+  },
+  {
+    "mode": "user",
+    "similarity": "cosine",
+    "k": 10,
+    "rmse": 0.9687946455039675,
+    "mae": 0.7565460805684714
+  },
+  {
+    "mode": "user",
+    "similarity": "cosine",
+    "k": 20,
+    "rmse": 0.9575105297725884,
+    "mae": 0.7482291735024996
+  },
+  {
+    "mode": "user",
+    "similarity": "cosine",
+    "k": 30,
+    "rmse": 0.9575516952052016,
+    "mae": 0.7486411508453769
+  },
+  {
+    "mode": "user",
+    "similarity": "cosine",
+    "k": 50,
+    "rmse": 0.9582845320490216,
+    "mae": 0.7498662873515712
+  },
+  {
+    "mode": "user",
+    "similarity": "cosine",
+    "k": 80,
+    "rmse": 0.9606594071141805,
+    "mae": 0.7523078747062589
+  },
+  {
+    "mode": "user",
+    "similarity": "cosine",
+    "k": 120,
+    "rmse": 0.9628731586969165,
+    "mae": 0.7549883303624282
+  },
+  {
+    "mode": "user",
+    "similarity": "pearson",
+    "k": 5,
+    "rmse": 0.9899815214400184,
+    "mae": 0.7706201220604237
+  },
+  {
+    "mode": "user",
+    "similarity": "pearson",
+    "k": 10,
+    "rmse": 0.9596156572123953,
+    "mae": 0.7476323860019818
+  },
+  {
+    "mode": "user",
+    "similarity": "pearson",
+    "k": 20,
+    "rmse": 0.9490352524148988,
+    "mae": 0.739636596441228
+  },
+  {
+    "mode": "user",
+    "similarity": "pearson",
+    "k": 30,
+    "rmse": 0.9474897809974228,
+    "mae": 0.7390893515283271
+  },
+  {
+    "mode": "user",
+    "similarity": "pearson",
+    "k": 50,
+    "rmse": 0.9484549714105696,
+    "mae": 0.7402809354559519
+  },
+  {
+    "mode": "user",
+    "similarity": "pearson",
+    "k": 80,
+    "rmse": 0.9499247700827446,
+    "mae": 0.7420799691244359
+  },
+  {
+    "mode": "user",
+    "similarity": "pearson",
+    "k": 120,
+    "rmse": 0.9515207074083534,
+    "mae": 0.7438414689733509
+  },
+  {
+    "mode": "item",
+    "similarity": "cosine",
+    "k": 5,
+    "rmse": 0.963539546552219,
+    "mae": 0.7467525868200412
+  },
+  {
+    "mode": "item",
+    "similarity": "cosine",
+    "k": 10,
+    "rmse": 0.9367931676975284,
+    "mae": 0.7297423625579007
+  },
+  {
+    "mode": "item",
+    "similarity": "cosine",
+    "k": 20,
+    "rmse": 0.9309675643994654,
+    "mae": 0.7268595298797804
+  },
+  {
+    "mode": "item",
+    "similarity": "cosine",
+    "k": 30,
+    "rmse": 0.932417620144134,
+    "mae": 0.7293422896703594
+  },
+  {
+    "mode": "item",
+    "similarity": "cosine",
+    "k": 50,
+    "rmse": 0.9359273203701421,
+    "mae": 0.7337068424916257
+  },
+  {
+    "mode": "item",
+    "similarity": "cosine",
+    "k": 80,
+    "rmse": 0.9399301969099589,
+    "mae": 0.7375227065086354
+  },
+  {
+    "mode": "item",
+    "similarity": "cosine",
+    "k": 120,
+    "rmse": 0.9428938059314856,
+    "mae": 0.7406769134436344
+  },
+  {
+    "mode": "item",
+    "similarity": "pearson",
+    "k": 5,
+    "rmse": 0.9625514120634294,
+    "mae": 0.7444314363756068
+  },
+  {
+    "mode": "item",
+    "similarity": "pearson",
+    "k": 10,
+    "rmse": 0.9366808087089913,
+    "mae": 0.7284190674374157
+  },
+  {
+    "mode": "item",
+    "similarity": "pearson",
+    "k": 20,
+    "rmse": 0.9305926119199189,
+    "mae": 0.7260049493784005
+  },
+  {
+    "mode": "item",
+    "similarity": "pearson",
+    "k": 30,
+    "rmse": 0.9300135609343999,
+    "mae": 0.726906034686469
+  },
+  {
+    "mode": "item",
+    "similarity": "pearson",
+    "k": 50,
+    "rmse": 0.9321619840273935,
+    "mae": 0.7295014673866986
+  },
+  {
+    "mode": "item",
+    "similarity": "pearson",
+    "k": 80,
+    "rmse": 0.9336822110596564,
+    "mae": 0.7312868524847463
+  },
+  {
+    "mode": "item",
+    "similarity": "pearson",
+    "k": 120,
+    "rmse": 0.9349904292953577,
+    "mae": 0.7325627739338617
+  }
+]

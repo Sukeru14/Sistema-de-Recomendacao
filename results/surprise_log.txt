@@ -1,0 +1,9 @@
+=== SVD via scikit-surprise (biblioteca externa) — 5-fold CV ===
+  Fold 1: RMSE=0.9283  MAE=0.7294  (0.6s)
+  Fold 2: RMSE=0.9266  MAE=0.7278  (0.7s)
+  Fold 3: RMSE=0.9375  MAE=0.7359  (0.6s)
+  Fold 4: RMSE=0.9264  MAE=0.7295  (0.6s)
+  Fold 5: RMSE=0.9323  MAE=0.7310  (0.6s)
+
+RMSE = 0.9302 ± 0.0042
+MAE  = 0.7307 ± 0.0028
